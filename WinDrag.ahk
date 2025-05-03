@@ -242,12 +242,14 @@ ExitFunc(ExitReason, ExitCode) {
     RestoreCursor()
 }
 
+LWin & LAlt up::
 LWin & LButton up::
 {
     global is_LWin_LMB_pressed
     is_LWin_LMB_pressed := false
 }
 
+LWin & LAlt::
 LWin & LButton::
 {
     global last_lbutton
@@ -338,12 +340,14 @@ LWin & LButton::
     RestoreCursor()
 }
 
+LWin & LCtrl up::
 LWin & RButton up::
 {
     global is_LWin_RMB_pressed
     is_LWin_RMB_pressed := false
 }
 
+LWin & LCtrl::
 LWin & RButton::
 {
     global last_rbutton
